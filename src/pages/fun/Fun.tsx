@@ -1,5 +1,3 @@
-import React from "react";
-
 function Fun() {
   return (
     <section className="space-y-6">

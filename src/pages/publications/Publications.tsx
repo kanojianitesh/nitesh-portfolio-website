@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { publications, conferences } from "./pubs";
 
 function Publications() {
@@ -32,9 +26,7 @@ function Publications() {
       <Card className="max-w-4xl w-full">
         <CardHeader>
           <CardTitle>Conferences & Workshops</CardTitle>
-          <CardDescription>
-            Presentations and workshops attended
-          </CardDescription>
+          <CardDescription>Presentations and workshops attended</CardDescription>
         </CardHeader>
         <CardContent>
           <ul className="list-disc list-inside space-y-3">
