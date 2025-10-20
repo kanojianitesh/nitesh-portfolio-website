@@ -12,11 +12,8 @@ function Publications() {
         </CardHeader>
         <CardContent>
           <ul className="list-disc list-inside space-y-3">
-            {publications.map(({ id, title, description }) => (
-              <li key={id}>
-                {title}
-                {description && <div>{description}</div>}
-              </li>
+            {publications.map(({ id, description }) => (
+              <li key={id}>{description}</li>
             ))}
           </ul>
         </CardContent>
