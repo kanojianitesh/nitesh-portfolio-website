@@ -17,6 +17,7 @@ function App() {
           <Header />
           <main className="container mx-auto flex-grow px-4 py-8">
             <Routes>
+              <Route path="/" element={<Navigate to="/portfolio" replace />} />
               <Route path="/portfolio" element={<Navigate to="/about" replace />} />
               <Route path="/about" element={<About />} />
               <Route path="/research" element={<Research />} />
