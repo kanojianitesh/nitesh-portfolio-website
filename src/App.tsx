@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/about/About";
@@ -17,7 +17,8 @@ function App() {
           <Header />
           <main className="container mx-auto flex-grow px-4 py-8">
             <Routes>
-              <Route path="/" element={<About />} />
+              <Route path="/" element={<Navigate to="/about" replace />} />
+              <Route path="/about" element={<About />} />
               <Route path="/research" element={<Research />} />
               <Route path="/publications" element={<Publications />} />
               <Route path="/teaching" element={<Teaching />} />
