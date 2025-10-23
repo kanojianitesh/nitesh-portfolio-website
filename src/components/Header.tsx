@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 // Navigation Items
 // --------------------
 export const NAV_ITEMS = [
-  { label: "About", path: "/" },
+  { label: "About", path: "/about" },
   { label: "Research", path: "/research" },
   { label: "Publications", path: "/publications" },
   { label: "Teaching", path: "/teaching" },
@@ -62,7 +62,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
         {/* Logo / Avatar */}
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/about" className="flex items-center space-x-2">
           <Avatar className="h-9 w-9 ring-1 ring-border">
             <AvatarImage alt="Profile" />
             <AvatarFallback>NK</AvatarFallback>
