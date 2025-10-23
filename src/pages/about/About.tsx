@@ -18,7 +18,7 @@ function About() {
         </div>
         <div className="md:w-1/3 flex justify-center">
           <img
-            src="/src/assets/nitesh_photo.jpeg"
+            src="/public/nitesh_photo.jpeg"
             alt="Nitesh Kanojia"
             className="rounded-lg object-cover border shadow-lg w-64 h-[360px] md:w-72 md:h-[405px] lg:w-80 lg:h-[450px]"
           />
